@@ -1,0 +1,73 @@
+[
+    {
+        "icon": "TbReceiptTax",
+        "title": "Tax Rate",
+        "name": "tax_rate"
+    },
+    {
+        "icon": "PiHandWithdraw",
+        "title": "Min Withdrawal",
+        "name": "min_withdrawal"
+    },
+    {
+        "icon": "FaRegAddressCard",
+        "title": "Registration Fees",
+        "name": "registration_fees"
+    },
+    {
+        "icon": "TbUsersGroup",
+        "title": "Partner Referral Required",
+        "name": "partner_referral_required"
+    },
+    {
+        "icon": "GiCash",
+        "title": "Partner Fee",
+        "name": "partner_fee"
+    },
+    {
+        "icon": "PiSealPercent",
+        "title": "Sponser Reward Percent",
+        "name": "SPONSOR_REWARD_PERCENT"
+    },
+    {
+        "icon": "PiSealPercentDuotone",
+        "title": "Corefferal Reward Percent",
+        "name": "COREFFERAL_REWARD_PERCENT"
+    },
+    {
+        "icon": "FaUsersViewfinder",
+        "title": "Total Users",
+        "name": "total_users",
+        "disable": true
+    },
+    {
+        "icon": "FaUsersGear",
+        "title": "Total Qualified Users",
+        "name": "total_qualified_users",
+        "disable": true
+    },
+    {
+        "icon": "TbMoneybag",
+        "title": "Total Distributed",
+        "name": "total_distributed",
+        "disable": true
+    },
+    {
+        "icon": "FaBalanceScaleLeft",
+        "title": "Tax Liability",
+        "name": "tax_liability",
+        "disable": true
+    },
+    {
+        "icon": "MdOutlineSavings",
+        "title": "System Reserve",
+        "name": "system_reserve",
+        "disable": true
+    },
+    {
+        "icon": "BsGraphUpArrow",
+        "title": "Company Revenue",
+        "name": "company_revenue",
+        "disable": true
+    }
+]
