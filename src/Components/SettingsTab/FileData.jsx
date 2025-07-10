@@ -12,6 +12,7 @@ import { PiSealPercent, PiSealPercentDuotone, PiHandWithdraw, PiSealCheck, PiPig
 import { LuBadgePercent } from "react-icons/lu";
 import { TbMoneybag } from "react-icons/tb";
 import { TbSquareRoundedPercentage } from "react-icons/tb";
+import { MdAccessTime } from "react-icons/md";
 const FileData = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -30,7 +31,8 @@ const FileData = () => {
         system_reserve: "",
         is_notTurbo_per: "",
         passed_perc: "",
-        total_withdrawal: ""
+        total_withdrawal: "",
+        deadline_timestamp: ""
     });
     const fields = [
         {
@@ -75,6 +77,11 @@ const FileData = () => {
             name: "passed_perc",
         },
         {
+            icon: MdAccessTime,
+            title: "Deadline Time (in days)",
+            name: "deadline_timestamp"
+        },
+        {
             icon: PiPiggyBankBold,
             title: "System Reserve Amount",
             name: "system_reserve",
@@ -112,7 +119,7 @@ const FileData = () => {
                 COREFFERAL_REWARD_PERCENT: formData.COREFFERAL_REWARD_PERCENT,
                 is_notTurbo_per: formData.is_notTurbo_per,
                 passed_perc: formData.passed_perc,
-
+                deadline_timestamp: formData.deadline_timestamp
             }
             const response = await ApiCall(headers, `/admin/update_fees_data`, "POST", data);
             if (response?.data) {
@@ -144,7 +151,8 @@ const FileData = () => {
                         system_reserve: await formatAmount(data.system_reserve),
                         is_notTurbo_per: data.is_notTurbo_per,
                         passed_perc: data.passed_perc,
-                        total_withdrawal: data.total_withdrawal
+                        total_withdrawal: data.total_withdrawal,
+                        deadline_timestamp: data.deadline_timestamp / (3600 * 24)
                     });
                 }
             })
